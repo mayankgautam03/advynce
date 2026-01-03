@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ChevronLeft, ChevronRight, PlayCircle, Coffee, Building, Dumbbell, Rocket } from 'lucide-react';
+import { ChevronLeft, ChevronRight, PlayCircle, Coffee, Building, Dumbbell, Sparkles, ShoppingCart, Syringe, GraduationCap, Lightbulb, UserCheck } from 'lucide-react';
 import { DrawCircleText } from '../components/DrawCircleText';
 import { VanishText } from '../components/VanishText';
 
@@ -52,10 +52,59 @@ const portfolioData = {
       { id: 8, title: "AJ Fitness #5", videoUrl: "https://drive.google.com/file/d/1X3C3aAD-lKDaFU09NPSuShK18le446XF/preview" },
     ]
   },
-  "Spa & Salon": {
-    description: "Serene and sophisticated visual storytelling that highlights the art of relaxation, beauty, and personal care experiences.",
+  "Astrology": {
+    description: "We turn astrology brands into authority figures with compelling visuals that attract, engage, and grow your audience.",
     color: "bg-pink-50",
-    icon: Rocket,
+    icon: Sparkles,
+    videos: [
+      { id: 1, title: "Hair Garage #1", videoUrl: "https://drive.google.com/file/d/194fHwzhRVLjudsA4ECb0VbvNzCsCpu4G/preview" },
+      { id: 2, title: "Hair Garage #2", videoUrl: "https://drive.google.com/file/d/1-pNnNY_EaYxdOrdX-GllNLZOVihJuC-T/preview" },
+      { id: 3, title: "Hair Garage #3", videoUrl: "https://drive.google.com/file/d/1Xj_I1Gc-qcThF18e0sr0MsHKf7di33JQ/preview" },
+    ]
+  },
+  "E-Commerce": {
+    description: "High-impact visual stories that drive attention, build trust, and convert browsing into confident purchases.",
+    color: "bg-pink-50",
+    icon: ShoppingCart,
+    videos: [
+      { id: 1, title: "E-Commerce #1", videoUrl: "https://drive.google.com/file/d/194fHwzhRVLjudsA4ECb0VbvNzCsCpu4G/preview" },
+
+    ]
+  },
+  "HealthCare & Clinic": {
+    description: "Compassionate visual stories that reflect trust, care, and the commitment to better health and patient well-being.",
+    color: "bg-pink-50",
+    icon: Syringe,
+    videos: [
+      { id: 1, title: "Hair Garage #1", videoUrl: "https://drive.google.com/file/d/194fHwzhRVLjudsA4ECb0VbvNzCsCpu4G/preview" },
+      { id: 2, title: "Hair Garage #2", videoUrl: "https://drive.google.com/file/d/1-pNnNY_EaYxdOrdX-GllNLZOVihJuC-T/preview" },
+      { id: 3, title: "Hair Garage #3", videoUrl: "https://drive.google.com/file/d/1Xj_I1Gc-qcThF18e0sr0MsHKf7di33JQ/preview" },
+    ]
+  },
+  "Education & Coaching": {
+    description: "Engaging visual narratives that inspire learning, highlight expertise, and empower academic and personal growth.",
+    color: "bg-pink-50",
+    icon: GraduationCap,
+    videos: [
+      { id: 1, title: "Hair Garage #1", videoUrl: "https://drive.google.com/file/d/194fHwzhRVLjudsA4ECb0VbvNzCsCpu4G/preview" },
+      { id: 2, title: "Hair Garage #2", videoUrl: "https://drive.google.com/file/d/1-pNnNY_EaYxdOrdX-GllNLZOVihJuC-T/preview" },
+      { id: 3, title: "Hair Garage #3", videoUrl: "https://drive.google.com/file/d/1Xj_I1Gc-qcThF18e0sr0MsHKf7di33JQ/preview" },
+    ]
+  },
+  "Startups": {
+    description: "Bold visual narratives that communicate vision, innovation, and the journey from idea to impact.",
+    color: "bg-pink-50",
+    icon: Lightbulb,
+    videos: [
+      { id: 1, title: "Hair Garage #1", videoUrl: "https://drive.google.com/file/d/194fHwzhRVLjudsA4ECb0VbvNzCsCpu4G/preview" },
+      { id: 2, title: "Hair Garage #2", videoUrl: "https://drive.google.com/file/d/1-pNnNY_EaYxdOrdX-GllNLZOVihJuC-T/preview" },
+      { id: 3, title: "Hair Garage #3", videoUrl: "https://drive.google.com/file/d/1Xj_I1Gc-qcThF18e0sr0MsHKf7di33JQ/preview" },
+    ]
+  },
+  "Local & Service based Business": {
+    description: "Honest visual narratives that showcase skilled services, local trust, and everyday business excellence.",
+    color: "bg-pink-50",
+    icon: UserCheck,
     videos: [
       { id: 1, title: "Hair Garage #1", videoUrl: "https://drive.google.com/file/d/194fHwzhRVLjudsA4ECb0VbvNzCsCpu4G/preview" },
       { id: 2, title: "Hair Garage #2", videoUrl: "https://drive.google.com/file/d/1-pNnNY_EaYxdOrdX-GllNLZOVihJuC-T/preview" },
@@ -163,11 +212,11 @@ const PortfolioSection = ({ category }) => {
 };
 
 const PortfolioPage = () => {
-  const [selectedCategory, setSelectedCategory] = useState(null);
+  const [selectedCategory, /*setSelectedCategory*/] = useState(null);
 
   return (
     <div className="bg-gradient-to-br from-blue-500 to-yellow-100">
-      <VanishText/>
+      <VanishText />
       <div className="min-h-screen p-4 md:p-8">
         <div className="container mx-auto">
           {!selectedCategory ? (

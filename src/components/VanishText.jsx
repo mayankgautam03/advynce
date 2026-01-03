@@ -18,6 +18,10 @@ export const VanishText = () => {
       "Gym & Fitness",
       "Spa & Saloons",
       "Small Businesses",
+      "Healthcare & Clinics",
+      "Education & Coaching",
+      "Startups",
+      "Local & Service based Business",
     ]}
   />
 </h3>
