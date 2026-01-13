@@ -97,8 +97,14 @@ function Footer() {
               </div>
               <div className="flex items-center text-gray-400">
                 <Mail size={16} className="mr-2" />
-                <span>advynce.work@gmail.com</span>
+                <span>support@advynce.in</span>
+              
               </div>
+              {/* <div className="flex items-center text-gray-400">
+                <Mail size={16} className="mr-2" />
+                <span>advynce.work@gmail.com</span>
+              
+              </div> */}
             </div>
           </div>
         </div>

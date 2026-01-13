@@ -23,7 +23,8 @@ const ContactUsPage = () => {
               </svg>
               <div>
                 <p className="font-semibold">Email</p>
-                <p>advynce.work@gmail.com</p>
+                <p>support@advynce.in</p>
+                
               </div>
             </div>
             <div className="flex items-center">
@@ -33,6 +34,13 @@ const ContactUsPage = () => {
               <div>
                 <p className="font-semibold">WhatsApp</p>
                 <p>+91 7417834950</p>
+              </div>
+            </div>
+            <div className="flex items-center">
+              <span className="mr-3 text-xl">📌</span>
+              <div>
+                <p className="font-semibold">Note:</p>
+                <p>If you face any difficulty in scheduling the meeting, you may directly contact us via WhatsApp or E-mail.</p>
               </div>
             </div>
           </div>
